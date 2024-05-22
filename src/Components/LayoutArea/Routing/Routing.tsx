@@ -1,6 +1,7 @@
 
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import Page404 from "../page404/page404";
+import Layout from "../Layout/Layout";
 import { Home } from "../Home/Home";
 
 function Routing(): JSX.Element {
@@ -9,8 +10,11 @@ function Routing(): JSX.Element {
 
             <Routes>
 
+                {/* Home: */}
+                <Route path="/Online-Music-Alarm" element={<Home />} />
+
                 {/* Default Route: */}
-                <Route path="/" element={<Home />} />
+                <Route path="/" element={<Navigate to="/Online-Music-Alarm" />} />
 
                 {/* Page not found routes: */}
                 <Route path="/pageNotFound" element={<Page404 />} />
