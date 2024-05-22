@@ -30,7 +30,7 @@ export function AlarmDialog(): JSX.Element {
     };
 
     const validateUrl = (url: string) => {
-        const regex = /^https:\/\/www\.youtube\.com\/watch\?v=[\w-]+(&[\w-]+=[\w-]+)*$/;
+        const regex = /^(https:\/\/www\.youtube\.com\/watch\?v=[\w-]+(&[\w-]+=[\w-]+)*)|(https:\/\/youtu\.be\/[\w-]+)$/;
         return regex.test(url);
     };
 
