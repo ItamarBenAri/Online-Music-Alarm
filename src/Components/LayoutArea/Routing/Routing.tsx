@@ -1,7 +1,6 @@
 
 import { Navigate, Route, Routes } from "react-router-dom";
 import Page404 from "../page404/page404";
-import Layout from "../Layout/Layout";
 import { Home } from "../Home/Home";
 
 function Routing(): JSX.Element {

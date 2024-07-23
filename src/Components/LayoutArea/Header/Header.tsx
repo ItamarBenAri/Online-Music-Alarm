@@ -13,7 +13,7 @@ function Header(): JSX.Element {
                             noWrap
                             component="a"
                         >
-                            &nbsp; Youtube Music Alarms
+                            &nbsp; Online Music Alarm
                         </Typography>
                     </Toolbar>
                 </Container>

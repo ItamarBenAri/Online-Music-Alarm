@@ -52,7 +52,6 @@ export function AlarmDialog(): JSX.Element {
 
             const timeUntilRing = calculationsService.hoursCalculation(timeToWakeUp);
             
-            // הצגת ההודעה עם הזמן הנותר
             toast.success(`Ring in ${timeUntilRing}`, {
                 position: "bottom-left",
                 autoClose: 5000,

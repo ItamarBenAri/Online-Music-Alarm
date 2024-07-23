@@ -12,7 +12,7 @@ export function YoutubeVideo(props: YoutubeVideoProps): JSX.Element {
                 url={props.url}
                 playing={true}
                 controls={true} 
-                height="100%"               
+                height="300px"               
                 width="100%"               
             />
         </div>

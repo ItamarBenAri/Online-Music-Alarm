@@ -9,7 +9,7 @@ function Page404(): JSX.Element {
     
     return (
         <div className="page404">
-            <img src={imageSource} />
+            <img src={imageSource} alt="404 page not found" />
         </div>
     );
 }

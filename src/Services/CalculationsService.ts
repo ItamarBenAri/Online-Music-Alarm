@@ -17,7 +17,7 @@ class CalculationsService {
 
         const remainingHours = Math.floor(timeDifference / (1000 * 60 * 60));
         const remainingMinutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-
+        if(remainingHours === 23 && remainingMinutes === 59) return 'now';
         return remainingHours > 0 ? `${remainingHours}h ${remainingMinutes}m` : `${remainingMinutes}m`;
     }
 
